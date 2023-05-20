@@ -58,7 +58,7 @@ pip install -r requirements.txt
 
 Implemented by [fire](https://github.com/google/python-fire)
 
-1. Make configuration file(.yml) in `src/experiments/config`
+1. Make configuration file(.yml) in `src/experiments/config` [[yaml syntax](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html)]
 2. Open terminal and change directory to `src`.
 3. Run script code like as below.
 
