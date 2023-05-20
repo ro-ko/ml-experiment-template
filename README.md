@@ -90,11 +90,11 @@ Tensorboard code is in `train.py`.
 ```
 tensorboard --logdir runs
 ```  
-`runs` is default log directory of tenrsorboard, you can log your specified directory. [[pytorch tensorboard tutorial](https://pytorch.org/docs/stable/tensorboard.html)] [[kor-docs version](https://tutorials.pytorch.kr/recipes/recipes/tensorboard_with_pytorch.html)]  
+`runs` is default directory of tenrsorboard logging, you can log your specified directory. [[pytorch tensorboard tutorial](https://pytorch.org/docs/stable/tensorboard.html)] [[kor-docs version](https://tutorials.pytorch.kr/recipes/recipes/tensorboard_with_pytorch.html)]  
 
 Per 5 epochs, model.pt is saved in `checkpoint` directory and it's code in `train.py`. Too short epoch term requires many storage resource if model is heavy, so you need to adjust proper value.  
 
-`log` directory saves additional informatio for experiment and metric value. It use `logger` library in python and `loguru` useful tool for logging.  
+`log` is directory which saves additional informatio for experiment and metric value. It use `logger` library in python and `loguru` useful tool for logging.  
 
 As above, if shell commands can be processed on the terminal, the following can be used.
 * Parallel experimentation on various parameters becomes easy (if a shell command is called in the background several times within the available CPU range, it is automatically scheduled and executed in parallel by the operating system)
