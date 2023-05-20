@@ -92,7 +92,7 @@ And add additional terminal shell and run tensorboard then you can check several
 tensorboard --logdir runs
 
 ```
-`runs` is default log file of tenrsorboard, you can log your specified directory. [pytorch tensorboard tutorial](https://pytorch.org/docs/stable/tensorboard.html) [kor-docs version](https://tutorials.pytorch.kr/recipes/recipes/tensorboard_with_pytorch.html)
+`runs` is default log file of tenrsorboard, you can log your specified directory. [[pytorch tensorboard tutorial](https://pytorch.org/docs/stable/tensorboard.html)] [[kor-docs version](https://tutorials.pytorch.kr/recipes/recipes/tensorboard_with_pytorch.html)]
 
 As above, if shell commands can be processed on the terminal, the following can be used.
 * Parallel experimentation on various parameters becomes easy (if a shell command is called in the background several times within the available CPU range, it is automatically scheduled and executed in parallel by the operating system)
