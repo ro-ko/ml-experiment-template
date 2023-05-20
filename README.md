@@ -50,7 +50,6 @@ pip install -r requirements.txt
     │       └── train.py            # mymodel train with data, hyper_param (gradient descent & backprop)
     ├── test.py
     └── utils.py
-    
 ```
 
 ## How to call this in a terminal?
@@ -66,7 +65,6 @@ Implemented by [fire](https://github.com/google/python-fire)
 python -m main --cfg_name default
 or
 python main.py --cfg_name=default
-
 ```
 ## Additional information for template
 You can check argument explaination by `python -m main --help`
@@ -91,7 +89,6 @@ And add additional terminal shell and run tensorboard then you can check several
 Tensorboard code is in `train.py`
 ```
 tensorboard --logdir runs
-
 ```
 `runs` is default log directory of tenrsorboard, you can log your specified directory. [[pytorch tensorboard tutorial](https://pytorch.org/docs/stable/tensorboard.html)] [[kor-docs version](https://tutorials.pytorch.kr/recipes/recipes/tensorboard_with_pytorch.html)]
 
