@@ -27,13 +27,13 @@ pip install -r requirements.txt
 
 ```shell
 ├── README.md
-├── datasets                        # datasets dir (다운로드 되면 자동으로 생성됨)
+├── datasets                        # datasets directory
 │   └── MNIST
 ├── sbin
 │   └── generate_pipreqs.sh
-└── src                             # source codes dir
+└── src                             # source codes directory
     ├── data.py                     # datasets (DataSet, DataLoader) related script
-    ├── experiments                 # experiment scripts dir
+    ├── experiments                 # experiment scripts directory
     │   ├── __init__.py
     │   ├── checkpoint
     │   ├── config
