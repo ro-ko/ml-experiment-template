@@ -8,7 +8,7 @@ from models.mymodel.model import MyModel
 from tqdm import tqdm
 from loguru import logger
 from datetime import datetime
-from utils import createDir
+from utils import create_dir
 
 
 class MyTrainer:
@@ -26,7 +26,7 @@ class MyTrainer:
         path = hyper_param['path']
         cfg_name = hyper_param['cfg_name']
         checkpoint_dir = './experiments/checkpoint/'+str(cfg_name)
-        createDir(checkpoint_dir)
+        create_dir(checkpoint_dir)
 
         data_loader = torch.utils.data.DataLoader(dataset=train_data,
                                                   batch_size=batch_size,
@@ -39,11 +39,11 @@ class MyTrainer:
         optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
         if checkpoint:
-            chkpoint = torch.load(path)
-            model.load_state_dict(chkpoint['model_state_dict'])
-            optimizer.load_state_dict(chkpoint['optimizer_state_dict'])
-            start = chkpoint['epoch']+1
-            loss = chkpoint['loss']
+            model_data = torch.load(path)
+            model.load_state_dict(model_data['model_state_dict'])
+            optimizer.load_state_dict(model_data['optimizer_state_dict'])
+            start = model_data['epoch']+1
+            loss = model_data['loss']
         else: start = 1
 
         model.train()

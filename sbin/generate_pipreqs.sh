@@ -1,5 +1,5 @@
 #!/bin/bash
-# `requirements.txt` 생성하는 방법
-# pipreqs를 설치 (pip install pipreqs)한 후 프로젝트 폴더에서 `pipreqs --force .`을 입력하면 현재 위치에 requirements.txt가 생성됨
+# how to generate`requirements.txt`
+# install pipreqs (pip install pipreqs), run `pipreqs --force .` at project folder then requirements.txt are generated
 
 pipreqs --force .

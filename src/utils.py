@@ -48,7 +48,7 @@ def show(imgs, labels):
         axs[0,i].set(xticklabels=[], yticklabels=[], xticks=[], yticks=[])
     plt.savefig('image')
 
-def createDir(dir):
+def create_dir(dir):
     try:
         if not os.path.exists(dir):
             os.makedirs(dir)
